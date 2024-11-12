@@ -42,31 +42,42 @@ body {
   line-height: 40.16px;
 }
 
-.navbar {
-  width: 100%;
-}
-.navbar__list {
+.header__navbar {
+  max-width: 1590px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
-.navbar__item {
-  display: flex;
-  width: 180px;
-  height: 90px;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
+.header__logo {
+  max-width: 428px;
+  margin-top: 1vw;
 }
-.navbar__link {
-  display: block;
+.header__logo img {
   width: 100%;
-  height: 100%;
-  line-height: 90px;
+  height: auto;
+}
+.header__list {
+  max-width: 550px;
+  width: 100%;
+  margin-right: 20%;
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 1vw;
+       column-gap: 1vw;
+}
+.header__item {
+  padding-top: 2vw;
+}
+.header__link {
   text-decoration: none;
+  font-family: "Fira Sans";
+  font-size: 1.125rem;
+  font-weight: 400;
   color: #1D3110;
+  transition: color 0.3s ease;
 }
-.navbar__link:hover {
-  transform: scale(1.05);
+.header__link:hover {
+  color: #F47F19;
 }
 
 .hero-section {
@@ -368,16 +379,28 @@ body {
   }
 }
 
-.mission {
-  display: flex;
-}
-.mission__title {
+.history__wrapper {
+  margin-top: 4vw;
   color: #1D3110;
-  font-family: "Mulish-Bold";
 }
-.mission__text {
-  color: #1D3110;
+.history__blok {
+  max-width: 1590px;
+  margin: 0 auto;
+}
+.history__title {
+  font-family: "Mulish";
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.2;
+  padding-bottom: 3vw;
+}
+.history__text {
+  text-align: justify;
+  padding-bottom: 4vw;
   font-family: "Fira Sans";
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
 }
 
 .advantages__wrapper {
@@ -977,17 +1000,26 @@ textarea::-webkit-resizer {
   }
 }
 .footer {
-  width: 100%;
-}
-.footer__container {
-  display: flex;
   background-color: #67A13C;
-  justify-content: space-between;
-  text-align: center;
-  align-items: center;
 }
-.footer__content {
-  width: 25%;
-  line-height: 100px;
+.footer__wrapper {
+  max-width: 1590px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.footer__text {
+  font-family: Fira Sans;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 4;
   color: #FFFFFF;
+}
+.footer__link {
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: color 0.3s ease;
+}
+.footer__link:hover {
+  color: #F47F19;
 }
